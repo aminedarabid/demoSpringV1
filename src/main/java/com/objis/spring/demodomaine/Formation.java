@@ -3,7 +3,7 @@ package com.objis.spring.demodomaine;
 
 public class Formation {
 
-    private Long id; // Identifiant formation (Clé primaire)
+	private Long id; // Identifiant formation (Clé primaire)
 
     private String theme; // Thème formation
 
@@ -29,4 +29,9 @@ public class Formation {
         super();
         this.theme = theme;
     }
+    
+    @Override
+	public String toString() {
+		return "[theme=" + theme + "]";
+	}
 }

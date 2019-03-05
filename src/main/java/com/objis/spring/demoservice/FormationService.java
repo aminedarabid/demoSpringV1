@@ -1,17 +1,17 @@
 package com.objis.spring.demoservice;
 
-import com.objis.spring.demodao.FormationDao;
+import com.objis.spring.demodao.IformationDAO;
 import com.objis.spring.demodomaine.Formation;
 
 public class FormationService {
 
-	private FormationDao dao;
+	private IformationDAO dao;
 
-	public FormationDao getDao() {
+	public IformationDAO getDao() {
 		return dao;
 	}
 
-	public void setDao(FormationDao dao) {
+	public void setDao(IformationDAO dao) {
 		this.dao = dao;
 	}
 
