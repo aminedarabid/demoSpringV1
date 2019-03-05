@@ -1,10 +1,12 @@
 package com.objis.spring.demoservice;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.objis.spring.demodao.IformationDAO;
 import com.objis.spring.demodomaine.Formation;
 
 public class FormationService {
-
+	@Autowired
 	private IformationDAO dao;
 
 	public IformationDAO getDao() {
