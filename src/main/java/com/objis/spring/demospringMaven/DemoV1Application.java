@@ -27,7 +27,7 @@ public class DemoV1Application {
 	
 			// 3. Manipulation du bean avec injection de dependances
 			formationService.creerformation(formation);
-			
+			((ClassPathXmlApplicationContext) appContext).close(); 
 			
 		 } catch (Exception e) {
 			 e.printStackTrace();

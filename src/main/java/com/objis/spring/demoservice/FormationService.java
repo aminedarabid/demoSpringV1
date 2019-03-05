@@ -18,4 +18,12 @@ public class FormationService {
 	public void creerformation(Formation formation) {
 		dao.create(formation);
 	}
+	
+	public void initmethod() {
+		System.out.println("je suis init");
+	}
+	
+	public void destroymethod() {
+		System.out.println("je suis destroy");
+	}
 }
